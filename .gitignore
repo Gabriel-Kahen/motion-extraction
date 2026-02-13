@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# macOS
+.DS_Store
+
+# Virtual environments
+.venv/
+.venv*/
+venv/
+env/
+
+# Build artifacts
+build/
+dist/
+*.spec
+
+# Local media/output artifacts
+outputs/
+videos/*.mp4
+videos/*.mov
+videos/*.avi
+videos/*.mkv
+videos/*.m4v
+
+# Vendored ffmpeg binary (downloaded by build script)
+vendor/ffmpeg-macos/ffmpeg
+
+# Test/cache
+.pytest_cache/
+.mypy_cache/
