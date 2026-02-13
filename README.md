@@ -63,28 +63,9 @@ Optional: use a specific local ffmpeg binary instead of auto-download:
 ./scripts/build_mac.sh --ffmpeg /absolute/path/to/ffmpeg
 ```
 
-## Windows App (.exe)
-
-Build on Windows (PowerShell):
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\build_windows.ps1
-```
-
-Output:
-
-`dist\MotionExtractionUI.exe`
-
-If this project is on GitHub, you can also use the included workflow:
-
-`.github/workflows/build-windows.yml`
-
-Run `Build Windows EXE` from the Actions tab and download the `MotionExtractionUI-windows` artifact.
-
 ## GitHub Actions Builds
 
 - macOS app workflow: `.github/workflows/build-macos.yml`
-- Windows exe workflow: `.github/workflows/build-windows.yml`
 
 ## Usage
 

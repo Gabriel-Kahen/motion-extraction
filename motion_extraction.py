@@ -699,7 +699,7 @@ def _reference_for_offset(history: deque[np.ndarray], offset: int) -> np.ndarray
 
 
 def _iter_ffmpeg_candidate_paths() -> list[Path]:
-    names = ["ffmpeg.exe", "ffmpeg"] if os.name == "nt" else ["ffmpeg", "ffmpeg.exe"]
+    names = ["ffmpeg"]
     candidates: list[Path] = []
 
     env_value = os.environ.get(FFMPEG_PATH_ENV, "").strip()

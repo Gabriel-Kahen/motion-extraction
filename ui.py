@@ -5,7 +5,6 @@ from __future__ import annotations
 
 import contextlib
 import io
-import os
 import queue
 import shlex
 import subprocess
@@ -970,8 +969,6 @@ class MotionExtractionUI:
         try:
             if sys.platform == "darwin":
                 subprocess.Popen(["open", str(path)])
-            elif os.name == "nt":
-                os.startfile(str(path))  # type: ignore[attr-defined]
             else:
                 subprocess.Popen(["xdg-open", str(path)])
         except Exception as exc:  # pragma: no cover - environment dependent
