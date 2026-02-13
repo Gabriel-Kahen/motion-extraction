@@ -3,6 +3,14 @@
 This is an implementation of the algorithm shown in Posy's video:
 [Motion Extraction](https://www.youtube.com/watch?v=NSS6yAMZF78).
 
+## Examples (Before → After)
+
+| Input | Output |
+| --- | --- |
+| <img src="examples/in1.gif" width="360" /> | <img src="examples/out1.gif" width="360" /> |
+| <img src="examples/in2.gif" width="360" /> | <img src="examples/out2.gif" width="360" /> |
+| <img src="examples/in3.gif" width="360" /> | <img src="examples/out3.gif" width="360" /> |
+
 Core idea:
 1. Duplicate the video.
 2. Invert the duplicate.
